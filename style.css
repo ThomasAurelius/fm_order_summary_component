@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
 
 *,
 ::before,
@@ -8,7 +8,7 @@
 
 body {
 	margin: 0;
-	font-family: "Playfair Display";
+	font-family: "Red Hat Display";
 }
 
 [hidden] {
@@ -74,69 +74,89 @@ section {
 	display: block;
 }
 
-section.home {
-	background-color: #eee;
-	min-height: 90vh;
+body {
+	background-image: url("./images/pattern-background-mobile.svg");
+	background-position: ;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.wrapper {
+	margin-top: 10vh;
 }
 
-.logo {
+.container {
 	display: flex;
-	justify-content: center;
-}
-
-.super {
-	font-size: 4rem;
-}
-
-.donut {
-	font-size: 4rem;
-	margin-left: 3rem;
-}
-
-.header-text {
-	background-color: crimson;
+	flex-direction: column;
+	background-color: #fff;
+	width: 400px;
+	height: 100%;
+	margin: auto;
 	text-align: center;
-	color: #eee;
+	border-radius: 30px;
+	box-shadow: 5px 5px 10px hsl(225, 100%, 98%);
 }
 
-.rack {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
+.contianer h2 {
+	font-weight: bold;
 }
 
-.rack > img {
-	display: inline;
-	width: 300px;
-	height: 200px;
-	margin: 20px;
+.hero-img {
+	border-radius: 30px 30px 0 0;
+}
+
+.container p {
+	margin: 0px 40px 20px;
+}
+
+.price {
+	position: relative;
+	background-color: hsl(225, 100%, 98%);
+	margin: 0 30px;
 	border-radius: 5px;
+	height: 5rem;
 }
 
-.products {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 20px;
-	list-style-type: none;
-	margin: 0;
+.price-icon {
+	position: absolute;
+	top: 15px;
+	left: 20px;
 }
 
-.products li {
-	justify-content: center;
-	align-items: center;
-	padding: 10px;
-	padding-inline: 38px;
-	font-size: 1.2rem;
-	margin: 0;
+.price-text {
+	position: absolute;
+	top: 20px;
+	left: 100px;
 }
 
-footer {
-	text-align: center;
-	background-color: crimson;
+.price-text-1 {
+	font-weight: bold;
 }
 
-footer a {
+.price-link {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+
+.btn {
+	margin: 30px;
+	padding: 12px;
+	border-radius: 12px;
 	text-decoration: none;
-	color: #eee;
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.payment-btn {
+	background-color: hsl(245, 75%, 52%);
+}
+
+.payment-btn:hover,
+.payment-btn:focus {
+	box-shadow: 3px 3px 6px hsl(245, 75%, 52%);
+}
+.cancel-btn {
+	color: hsl(245, 75%, 52%);
+	margin: 0px 30px 30px 30px;
 }
